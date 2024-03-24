@@ -802,7 +802,7 @@ function testRef() {
   ></ConnectedForwardedFunctionalComponent>
 
   // Should be able to use all refs including legacy string
-  const classLegacyRef: React.LegacyRef<ClassComponent> | undefined = undefined
+  const classLegacyRef: React.Ref<ClassComponent> | undefined = undefined
   ;<ConnectedClassComponent ref={classLegacyRef}></ConnectedClassComponent>
   ;<ConnectedClassComponent
     ref={React.createRef<ClassComponent>()}
