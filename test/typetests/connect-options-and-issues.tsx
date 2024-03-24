@@ -810,6 +810,7 @@ function testRef() {
   ;<ConnectedClassComponent
     ref={(ref: ClassComponent) => {}}
   ></ConnectedClassComponent>
+  // @ts-expect-error String refs are no longer supported in React 19.
   ;<ConnectedClassComponent ref={''}></ConnectedClassComponent>
   // ref type should be the typeof the wrapped component
   ;<ConnectedClassComponent
