@@ -752,11 +752,11 @@ function connect<
       const renderedWrappedComponent = React.useMemo(() => {
         return (
           // @ts-ignore
-          (<WrappedComponent
+          <WrappedComponent
             {...actualChildProps}
             ref={reactReduxForwardedRef}
-          />)
-        );
+          />
+        )
       }, [reactReduxForwardedRef, WrappedComponent, actualChildProps])
 
       // If React sees the exact same element reference as last time, it bails out of re-rendering
